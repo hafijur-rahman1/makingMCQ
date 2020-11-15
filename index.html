@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<body>
+    <div class="container" style="text-align: center;">
+        <h1>বড় সংখাটি খুজে বের কর</h1>
+        <button  id="n1" >121</button>
+        <button  id="n2">122</button>
+        <button  id="n3">333</button>
+        <br>
+        <br>
+        <br>
+        <div id="none" style="color: red;"></div>
+
+
+
+    </div>
+
+    <script>
+         let correct = document.getElementById('n3').value;
+         let bO = document.getElementById('n1');
+         let bT = document.getElementById('n2');
+      
+        document.getElementById('n1').addEventListener("click", function(){
+            if(correct === bO  ){
+                document.getElementById('none').innerHTML = "correct";
+            }
+            else{
+                document.getElementById('none').innerHTML = "wrong"; 
+            }
+        });
+
+        document.getElementById('n2').addEventListener("click", function(){
+            if(correct === bT ){
+                document.getElementById('none').innerHTML = "correct";
+            }
+            else{
+                document.getElementById('none').innerHTML = "wrong"; 
+            }
+        });
+
+        document.getElementById('n3').addEventListener("click", function(){
+            if(correct ===correct){
+                document.getElementById('none').innerHTML = "correct";
+            }
+            else{
+                document.getElementById('none').innerHTML = "wrong"; 
+            }
+        });
+    </script>
+</body>
+</html>
